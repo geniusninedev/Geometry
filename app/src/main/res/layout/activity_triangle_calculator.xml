@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_triangle_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geniusnine.android.geometry.TriangleCalculator.TriangleCalculator">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_geometric_sequence_calculator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.geniusnine.android.statisticscalculator.NumberSequence.GeometricSequence">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="First Side of Triangle"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFirstSide"
+                    android:textSize="16dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+
+                    android:background="@android:drawable/editbox_background"
+                    android:id="@+id/editTextFirstSide"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="80dp">
+
+                <TextView
+                    android:text="Second Side of Triangle"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewSecondSide"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+
+                    android:background="@android:drawable/editbox_background"
+                    android:id="@+id/editTextSecondSide"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="130dp">
+
+                <TextView
+                    android:text="Third Side of Triangle"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewThirdSide"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:background="@android:drawable/editbox_background"
+                    android:id="@+id/editTextThirdSide"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="230dp">
+
+
+                <Button
+                    android:textColor="@android:color/background_light"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:text="Calculate"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonCalculate" />
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:text="Reset"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/buttonReset" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="320dp">
+
+                <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewResult" />
+                <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewResultTriangle" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

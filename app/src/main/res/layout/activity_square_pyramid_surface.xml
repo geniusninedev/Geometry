@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_ball_volume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.geniusnine.android.geometry.VolumeCalculator.">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Base Radius"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/textViewSqrSurfaceRadius"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:inputType="numberSigned"
+                android:background="@android:drawable/editbox_background"
+                android:id="@+id/editTextSqrSurfaceRadius"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/spinnerSqrSurfaceRadius"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Height"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/textViewSqrRadius"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:inputType="numberSigned"
+                android:background="@android:drawable/editbox_background"
+                android:id="@+id/editTextSqrSurfaceHeight"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/spinnerSqrSurfaceHeight"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="240dp">
+
+
+            <Button
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="Calculate"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCalculateSqrSurface" />
+            <Button
+                android:layout_marginLeft="20dp"
+                android:text="Reset"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:id="@+id/buttonResetSqrSurface" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="320dp">
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@android:drawable/editbox_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewResultSqrSurfaceArea" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="380dp">
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@android:drawable/editbox_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewResultSqrSurfaceAreaLateral" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="440dp">
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@android:drawable/editbox_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewResultSqrSurfaceAreaTotal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+

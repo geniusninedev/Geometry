@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_ball_volume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.geniusnine.android.geometry.VolumeCalculator.">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Length"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/textViewElliSurfaceAreaLength"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:inputType="numberSigned"
+                android:background="@android:drawable/editbox_background"
+                android:id="@+id/editTextElliSurfaceAreaLength"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/spinnerElliSurfaceAreaLength"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Width"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/textViewElliSurfaceAreaWidth"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:inputType="numberSigned"
+                android:background="@android:drawable/editbox_background"
+                android:id="@+id/editTextElliSurfaceAreaWidth"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/spinnerElliSurfaceAreaWidth"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Height"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/textViewElliSurfaceAreaRectangleHeight"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:inputType="numberSigned"
+                android:background="@android:drawable/editbox_background"
+                android:id="@+id/editTextElliSurfaceAreaRectangleHeight"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/spinnerElliSurfaceAreaRectangleHeight"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="240dp">
+
+
+            <Button
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="Calculate"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCalculateElliSurfaceArea" />
+            <Button
+                android:layout_marginLeft="20dp"
+                android:text="Reset"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:id="@+id/buttonResetElliSurfaceArea" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="320dp">
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@android:drawable/editbox_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewResultElliSurfaceArea" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
